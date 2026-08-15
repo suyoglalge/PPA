@@ -1,35 +1,34 @@
-// avarage counting using function
 
-#include <stdio.h>
+}#include <stdio.h>
 
-
-calculator(floatvalue1,floatvalue2,floatvalue3,floatvalue4)
+float calculator(float value1, float value2, float value3, float value4)
 {
-float avarage;
-avarage=( floatvalue1+floatvalue2 + floatvalue3)/floatvalue4;
-return avarage;
+    float average;
+
+    average = (value1 + value2 + value3) / value4;
+
+    return average;
 }
-int main(){
 
- float maths,biology,physics,subjects,grade;
+int main()
+{
+    float maths, biology, physics, subjects, grade;
 
- printf("enter your mathematics marks\n");
- scanf("%f\n",&maths);
+    printf("Enter your mathematics marks: ");
+    scanf("%f", &maths);
 
- printf("enter your biology grades\n");
- scanf("%f\n",&biology);
+    printf("Enter your biology marks: ");
+    scanf("%f", &biology);
 
- printf("enter your physics marks");
- scanf("%f\n",&physics);
+    printf("Enter your physics marks: ");
+    scanf("%f", &physics);
 
- printf("entr total number of subjects\n");
- scanf("%f\n",&subjects);
+    printf("Enter total number of subjects: ");
+    scanf("%f", &subjects);
 
- grade= calculator(maths,biology,physics,subjects);
+    grade = calculator(maths, biology, physics, subjects);
 
- printf("YOUR TOTAL AVRAGE IS :%f\n",grade);
-
-
+    printf("YOUR TOTAL AVERAGE IS: %.2f\n", grade);
 
     return 0;
 }
