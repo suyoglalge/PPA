@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+
+ float value1 = 10.5f;     
+ float value2=11.2f;      //hardcoded input : means fix input output    
+ float ans = 0.0f;       
+
+ ans = value1 + value2;
+
+ printf("Addition is :%f\n",ans);
+
+    return 0;
+}
