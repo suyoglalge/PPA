@@ -1,0 +1,25 @@
+#include<stdio.h>
+#pragma pack (1)// memo will allocate in term 1
+
+struct demo
+{
+ int i;
+ float f;
+ double d;
+
+};
+int main()
+{
+   struct demo dobj;
+
+   dobj.i=11;
+   dobj.f=3.14f;
+   dobj.d=9.6789;
+
+   printf("%d\n",dobj.i);
+   printf("%f\n",dobj.f);
+   printf("%lf\n",dobj.d);
+    
+
+    return 0;
+}
