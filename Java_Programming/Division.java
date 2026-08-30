@@ -1,22 +1,20 @@
 import java.util.Scanner;
-
 class Division
 {
-public static void main(String[] args) 
-    {
-        int a,b,Div;
+    public static void main(String[] args) {
+        Scanner Sobj= new Scanner(System.in);
 
-        Scanner sobj = new Scanner(System.in);
+        int no1,no2,Div;
 
-        System.out.println("Enter first number:");
-        a=sobj.nextInt();
+        System.out.println("Enter first number :");
+        no1=Sobj.nextInt();
 
-        System.out.println("Enter first number:");
-        b=sobj.nextInt();
+        System.out.println("Enter Second number :");
+        no2=Sobj.nextInt();
 
-        Div=a/b;
+        Div=no1/no2;
 
-        System.out.println("Division is :"+Div);
+        System.out.println("The dividon of two number is :"+Div);
 
     }
 
